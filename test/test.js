@@ -28,6 +28,6 @@ describe('Link "Софт для быстрого создания скриншо
 
         driver.get(url);
         driver.findElement(By.css('label[for=soft]>a')).getAttribute('href')
-            .should.eventually.be.oneOf("http://monosnap.com").notify(done);
+            .should.eventually.be.oneOf(expected_links).notify(done);
     });
 });
