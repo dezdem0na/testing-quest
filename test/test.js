@@ -24,7 +24,7 @@ describe('Link "Софт для быстрого создания скриншо
 
     it('should lead to "http://monosnap.com"', function (done) {
         var url = 'http://blog.csssr.ru/qa-engineer';
-        var expected_links = ['http://monosnap.com/', 'http://monosnap.com', 'http://app.prntscr.com/ru/'];
+        var expected_links = ['http://monosnap.com/', 'http://monosnap.com'];
 
         driver.get(url);
         driver.findElement(By.css('label[for=soft]>a')).getAttribute('href')
